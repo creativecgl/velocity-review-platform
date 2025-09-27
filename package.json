@@ -7,13 +7,11 @@
     "apps/*"
   ],
   "scripts": {
-    "build": "pnpm --filter web build",
-    "dev": "pnpm --filter web dev",
-    "start": "pnpm --filter web start"
+    "build": "npm run build --workspace=apps/web",
+    "dev": "npm run dev --workspace=apps/web",
+    "start": "npm run start --workspace=apps/web"
   },
-  "packageManager": "pnpm@8.0.0",
   "engines": {
-    "node": ">=18.0.0",
-    "pnpm": ">=8.0.0"
+    "node": ">=18.0.0"
   }
 }
